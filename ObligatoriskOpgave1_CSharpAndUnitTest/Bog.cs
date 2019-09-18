@@ -59,5 +59,10 @@ namespace ObligatoriskOpgave1_CSharpAndUnitTest
                 _isbn13 = value;
             }
         }
+
+        public override string ToString()
+        {
+            return $"{nameof(Titel)}: {Titel}, {nameof(Forfatter)}: {Forfatter}, {nameof(Sidetal)}: {Sidetal}, {nameof(Isbn13)}: {Isbn13}";
+        }
     }
 }

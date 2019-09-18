@@ -53,6 +53,7 @@ namespace TestBog
         public void TestBogObjekt()
         {
             Bog bog2 = new Bog("Mortens Bog", "Jasmin", 10, "ISBN123456789");
+            Assert.AreEqual(new Bog("Mortens Bog", "Jasmin", 10, "ISBN123456789").ToString(), bog2.ToString());
         }
     }
 }
